@@ -4,9 +4,35 @@ html {
     padding: 0;
 }
 body {
-    font-family:75% helvetica, sans-serif;
-    color:#FFF;
+    font-family: helvetica, sans-serif;
+    color:#000;
+    background:#fff;
 }
 
+#navlist li
+{
+display: inline;
+list-style-type: none;
+padding-right: 10px;
+}
 
-/* structure divs */
+/* structure divs 
+header {
+
+}
+nav {
+
+}
+section {
+    
+}
+article {
+    
+}
+aside {
+    
+}
+footer {
+    
+}
+*/
