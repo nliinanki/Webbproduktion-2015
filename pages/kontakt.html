@@ -15,7 +15,38 @@
     <li><a href="kontakt.html">      Kontakt        </a></li>
 </ul>
 
+<form id="kontaktform" action="" method="post"> <!-- Inga inloggningsuppgifter än -->
 
+<fieldset>
+    <legend> Avsändaruppgifter </legend>
+<ul>
+    <li><label for="namn"> Namn:    </label> <input type="text" name="namn" id="namn"></li>
+    <li><label for="epost"> Email:  </label> <input type="text" name="epost" id="epost"></li>
+    <li><label for="tele"> Telefon: </label> <input type="text" name="tele" id="tele"></li>
+    
+</ul>
+</fieldset>    
+
+<fieldset>
+    <legend> Fråga </legend>
+<ul>
+   <li><label for="fragor"> Ärendetyp: </label> <select name="fragor" id="fragor">
+           <option value=""> Välj typ </option>
+           <option value="fraga"> Fråga </option>
+           <option value="synpunkt"> Synpunkt </option>
+   </select></li>
+   <li><label for="rubrik"> Rubrik: </label> <input type="text" name="rubrik" id="rubrik"></li>
+   <li><label for="kommentar"> Kommentar: </label> <textarea name="kommentar" id="kommentar" cols="50" rows="5"></textarea></li>
+</ul>
+<ul>
+   <li><label for="sepost"> Svara mig via mail </label> <input type="radio" name="svar" id="sepost" value="sepost"></li>
+   <li><label for="stele"> Svara mig via telefon </label> <input type="radio" name="svar" id="stele" value="stele"></li>
+</ul>  
+</fieldset>    
+
+    <input type="submit" value="Skicka">
+    
+</form>
 
     
 </body>
