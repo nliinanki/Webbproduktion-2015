@@ -4,92 +4,84 @@
 <head>
     <meta charset="utf-8">
     <title> Kontakt sida </title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
 </head>
 
 <body>
-<div id="container">
-    <header>
-        <nav>
+    <div id="container">
+        <header>
             <a href="../index.html"><img src="../pics/nlogo.png" alt="logotype" id="logo"></a>
-            <ul>
-                <li><a href="laborations.html"> Laborationer   </a></li>
-                <li><a href="presentation.html"> Presentation   </a></li>
-                <li><a href="contact.html">      Kontakt        </a></li>
-            </ul>
-        </nav>
-    </header>
+            <nav>
+                <ul>
+                    <li><a href="laborations.html"> Laborationer   </a></li>
+                    <li><a href="presentation.html"> Presentation   </a></li>
+                    <li><a href="contact.html">      Kontakt        </a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <article>
-        <h1> Kontakt </h1>
-        <form id="contact[]" action="http://webproduction.standout.se/form.php" method="POST">
-            <fieldset>
-                <legend> Personliga uppgifter </legend>
-                <ul>
-                    <li>
-                        <label for="name"> Namn: </label>
-                        <input type="text" name="name" id="name" autofocus placeholder="Förnamn Efternamn">
-                    </li>
-                    <li>
-                        <label for="email"> Email: </label>
-                        <input type="email" name="email" id="email" placeholder="ex. mail@adress.domän">
-                    </li>
-                    <li>
-                        <label for="tel"> Telefon: </label>
-                        <input type="tel" name="tel" id="tel" placeholder="Nummer utan mellanslag">
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend> Fråga </legend>
-                <ul>
-                    <li>
-                        <label for="errand"> Ärendetyp: </label>
-                        <select name="errand" id="errand">
-                            <option value="question"> Fråga </option>
-                            <option value="remark"> Synpunkt </option>
-                        </select>
-                    </li>
-                    <li>
-                        <label for="title"> Rubrik: </label>
-                        <input type="text" name="title" id="title" placeholder="Vad ska göras?">
-                    </li>
-                    <li>
-                        <label for="question"> Kommentar: </label>
-                        <textarea name="question" id="question" cols="20" rows="5" placeholder="Beskrivning"></textarea>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <label for="mail"> Svara mig via mail </label>
-                        <input type="checkbox" name="reply" id="mail" value="mail">
-                    </li>
-                    <li>
-                        <label for="phone"> Svara mig via telefon </label>
-                        <input type="checkbox" name="reply" id="phone" value="phone">
-                    </li>
-                    <li>
-                        <label for="date"> Datum för svar </label>
-                        <input type="date" name="date" id="date">
-                    </li>
-                    <li>
-                        <label for="time"> Tidpunkt </label>
-                        <input type="time" name="time" id="time">
-                    </li>
-                    <li>
-                        <label for="color"> Favoritfärg </label>
-                        <input type="color" name="color" id="color">
-                    </li>
-                </ul>
-            </fieldset>
-            <input type="submit" value="Skicka">
-        </form>
-    </article>
-
-    <footer>
-        <p> _ Webbproduktion 2015 _ </p>
-    </footer>
-</div>
+        <article>
+            <h1> Kontakt </h1>
+            <form id="contact[]" action="http://webproduction.standout.se/form.php" method="POST">
+                <fieldset>
+                    <legend> Personliga uppgifter </legend>
+                    <ul>
+                        <li>
+                            <label for="name"> Namn: </label>
+                            <input type="text" name="name" id="name" autofocus placeholder="Förnamn Efternamn">
+                        </li>
+                        <li>
+                            <label for="email"> Email: </label>
+                            <input type="email" name="email" id="email" placeholder="ex. mail@adress.domän">
+                        </li>
+                        <li>
+                            <label for="tel"> Telefon: </label>
+                            <input type="tel" name="tel" id="tel" placeholder="Nummer">
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend> Fråga </legend>
+                    <ul>
+                        <li>
+                            <label for="errand"> Ärendetyp: </label>
+                            <select name="errand" id="errand">
+                                <option value="question"> Fråga </option>
+                                <option value="remark"> Synpunkt </option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="title"> Rubrik: </label>
+                            <input type="text" name="title" id="title" placeholder="Vad ska göras?">
+                        </li>
+                        <li>
+                            <label for="question"> Kommentar: </label>
+                            <textarea name="question" id="question" cols="20" rows="5" placeholder="Beskrivning"></textarea>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <label for="mail"> Svara mig via mail </label>
+                            <input type="checkbox" name="reply" id="mail" value="mail">
+                        </li>
+                        <li>
+                            <label for="phone"> Svara mig via telefon </label>
+                            <input type="checkbox" name="reply" id="phone" value="phone">
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="Skicka">
+            </form>
+        </article>
+        <aside>
+            <h2> Sidospalt             </h2>
+            <p> Träutensilierna i ett tryckeri äro ingalunda en faktor där trevnadens ordningens och ekonomiens upprätthållande, och dock är det icke sällan som sorgliga erfarenheter göras ordningens och ekon och miens därmed upprätthållande. Träutensilierna
+                i ett tryckeri äro ingalunda en oviktig faktor, för trevnadens ordningens och och dock är det icke sällan.</p>
+        </aside>
+        <footer>
+            <p> _ Webbproduktion 2015 _ </p>
+        </footer>
+    </div>
 </body>
 
 </html>
