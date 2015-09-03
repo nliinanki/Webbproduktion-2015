@@ -2,47 +2,62 @@ body {
     font-family:Helvetica, arial, sans-serif;
     color:#4d4d4d;
     background-color:#ccc;
+    margin:0;
+    padding:0;
 }
 
 /* Layout divs */
 
 #container {
-    background-color:#fff;
+    background-color:#fafafa;
     margin:0 auto;
-    width:960px;
+    width:1000px;
     height:auto;
     overflow:auto;
-    border:1px; border-style:solid; border-color:#000;
 }
 header {
-    height:100px;
-    border:1px; border-style:solid; border-color:#f00;
+    margin:0 auto;
+    background-color:#4682b4;
+}
+header ul {
+    margin:0;
+    padding:0;
 }
 #logo {
     float:right;
 }
 article {
-    border:1px; border-style:solid; border-color:#0f0;
-    width:630px;
+    margin:2%;
+    padding:2%;
+    width:50%;
     float:left;
+    background-color:#fff;
+    border:1px;
+    border-style:solid;
+    border-color:#708090;
 }
 aside {
-    width:310px;
+    margin:2%;
+    padding:2%;
+    width:30%;
     height:auto;
-    border:1px; border-style:solid; border-color:#00f;
     float:right;
+    background-color:#fff;
+    border:1px;
+    border-style:solid;
+    border-color:#708090;
 }
 footer {
-    width:958px;
-    border:1px; border-style:solid; border-color:#f00;
+    width:100%;
+    background-color:#FFAF00;
     float:left;
 }
 
 
-/* Index */
+/* Index specifikt */
 .blogimage {
-    width: 300px;
+    width: 40%;
 }
 .blogvideo {
-    width: 500px;
+    width: 60%;
 }
