@@ -1,0 +1,34 @@
+body {
+    font-family:Helvetica, arial, sans-serif;
+    color:#4d4d4d;
+    background-color:#000;
+}
+
+/* Layout divs */
+
+#container {
+    background-color:#00f;
+    margin:0 auto;
+    width:960px;
+}
+header {
+    background-color:#0f0;
+    height:100px;
+    
+}
+#logo {
+    float:right;
+}
+nav {
+    height:80px;
+    width:400px;
+    margin-top:20px;
+    background-color:#fff;
+    float:left;
+}
+article {
+    background-color:#fff;
+}
+footer {
+    background-color:#f00;
+}
