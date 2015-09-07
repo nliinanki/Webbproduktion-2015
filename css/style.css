@@ -1,19 +1,10 @@
 body {
     font-family: Garamond, serif;
-    font-size: 1.1em;
     color:#3C3C3E;
     background-color:#57575B;
     margin:0;
     padding:0;
 }
-h1 {
-    font-size:3.2em;
-    font-weight: bold;
-    color:#689096;
-    margin:4% 1% 1% 0;
-    float:right;
-}
-h2, h3, h4 {font-family:"helvetica", "arial", serif; }
 
 /* Layout divs */
 #container {
@@ -46,6 +37,8 @@ footer {
     background-color:#ED7E00;
     float:left;
 }
+footer p {text-align: center }
+
 /* Menu */
 nav {margin:0; float:right;}
 nav ul li {
@@ -58,7 +51,6 @@ nav ul li {
 }
 nav ul ul {display: none;}
 
-
 nav .submenu:after {
    border: 0.3em solid transparent; 
    border-top-color: #FEFEF3;  
@@ -68,8 +60,6 @@ nav .submenu:after {
    position: relative;
    right: -0.3em; 
 }
-
-
 nav li:hover ul {
 	display: block;
 	position: absolute;
@@ -94,5 +84,32 @@ article {
     padding:1%;
     margin-bottom:2%;
 }
-article img {width: 20%;}
-article video {width: 60%;}
+article img {width: 30%;}
+article video {width: 90%;}
+aside img {width: 60%;float:right;}
+
+/* Typografi */
+h1 {
+    font: 900 normal 3.2em/110% "garamond", serif; 
+    color:#689096;
+    margin:4% 1% 1% 0;
+    float:right;
+}
+h2, h3, h4 {font-family:"helvetica", "arial", sans-serif; margin-top:0;}
+
+.author {
+    font: italic normal 1.0em/100% "garamond", serif;
+    padding:0.5em 0 0 0;
+    margin:0;
+}
+
+/* Table */
+table {
+    border-collapse:collapse
+}
+th, td {
+    padding:0.5em;
+}
+tr {
+    border-bottom: 1px solid #3C3C3E;
+}
