@@ -1,13 +1,21 @@
 body {
-    font-family:Helvetica, arial, sans-serif;
+    font-family: Garamond, serif;
+    font-size: 1.1em;
     color:#3C3C3E;
     background-color:#57575B;
     margin:0;
     padding:0;
 }
+h1 {
+    font-size:3.2em;
+    font-weight: bold;
+    color:#689096;
+    margin:4% 1% 1% 0;
+    float:right;
+}
+h2, h3, h4 {font-family:"helvetica", "arial", serif; }
 
 /* Layout divs */
-
 #container {
     background-color:#FEFEF3;
     margin:0 auto;
@@ -15,10 +23,7 @@ body {
     height:auto;
     overflow:auto;
 }
-header {
-    background-color:#3C3C3E;
-    overflow:auto;
-}
+header {background-color:#3C3C3E; overflow:auto;}
 #logo {
     float:left;
     background-color:#689096;
@@ -37,27 +42,51 @@ aside {
 }
 footer {
     width:100%;
+    margin:0 auto;
     background-color:#ED7E00;
     float:left;
 }
 /* Menu */
-nav {
-    margin-top:6em;
-    float:right;
-}
-nav a {
-    font: normal small-caps normal 1.1em/110% "helvetica", serif; 
-    color:#FEFEF3;
-    text-decoration:none;
-}
+nav {margin:0; float:right;}
 nav ul li {
     list-style-type:none;
-    display:inline;
+    display:block;
+    float:left;
     padding:0;
     margin-left:1em;
     margin-right:1em;
 }
+nav ul ul {display: none;}
 
+
+nav .submenu:after {
+   border: 0.3em solid transparent; 
+   border-top-color: #FEFEF3;  
+   content: ''; 
+   vertical-align: bottom;
+   display: inline-block;
+   position: relative;
+   right: -0.3em; 
+}
+
+
+nav li:hover ul {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0.5em 0; }
+nav li:hover li {clear:both;background-color: #3C3C3E;}
+
+nav a {
+    font: normal small-caps normal 1.1em/110% "Helvetica", "Arial", sans-serif; 
+    color:#FEFEF3;
+    text-decoration:none;
+}
+nav a:link {color:#FEFEF3;}
+nav a:visited {color:#FEFEF3;}
+nav a:hover {color:#689096;}
+nav a:active {color:#ED7E00;}
+nav #current {border-bottom:0.2em solid #FEFEF3;}
 
 /* Content */
 article {
@@ -65,9 +94,5 @@ article {
     padding:1%;
     margin-bottom:2%;
 }
-article img {
-    width: 20%;
-}
-article video {
-    width: 60%;
-}
+article img {width: 20%;}
+article video {width: 60%;}
