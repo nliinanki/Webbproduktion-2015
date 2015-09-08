@@ -14,18 +14,23 @@ body {
     height:auto;
     overflow:auto;
 }
-header {background-color:#3C3C3E; overflow:auto;}
+header {
+    background-image:url(pics/black_paper.png);
+    overflow:auto;
+}
 #logo {
     float:left;
-    background-color:#689096;
     width:10em;
+    padding-left:1.5%;
 }
 main {
+    background-color:#FEFEF3;
     margin:2% 1% 2% 2%;
     width:57.8%;
     float:left;
 }
 aside {
+    background-color:#FEFEF3;
     margin:2% 2% 2% 1%;
     width:35.2%;
     height:auto;
@@ -84,13 +89,23 @@ article {
     padding:1%;
     margin-bottom:2%;
 }
+.icon
+ { 
+  margin: 0px;
+  padding-left:5%;    
+  background-image: url(pics/nl.svg);
+  background-repeat: no-repeat;
+  background-size:1.2em;
+
+}
 article img {width: 30%;}
 article video {width: 90%;}
 aside img {width: 60%;float:right;}
 
+
 /* Typografi */
 h1 {
-    font: 900 normal 3.2em/110% "garamond", serif; 
+    font: 900 normal 3.5em/110% "garamond", serif; 
     color:#689096;
     margin:4% 1% 1% 0;
     float:right;
@@ -99,7 +114,7 @@ h2, h3, h4 {font-family:"helvetica", "arial", sans-serif; margin-top:0;}
 
 .author {
     font: italic normal 1.0em/100% "garamond", serif;
-    padding:0.5em 0 0 0;
+    padding:0.5em 0 3em 0;
     margin:0;
 }
 
