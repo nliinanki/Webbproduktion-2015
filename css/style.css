@@ -5,6 +5,13 @@ body {
     margin:0;
     padding:0;
 }
+/* Coloring
+Mörkgrå: 	#3C3C3E rgb(60, 60, 62)
+vit:		#FEFEF3 rgb(254, 254, 243)
+orange: 	#ED7E00 rgb(237, 126, 0)
+grå:		#57575B rgb(87, 87, 91)
+blå:		#689096 rgb(104, 144, 150)
+*/
 
 /* Layout divs */
 #container {
@@ -15,31 +22,27 @@ body {
     overflow:auto;
 }
 header {
-    background-image:url(pics/black_paper.png);
+    background: -prefix-linear-gradient(top, #3C3C3E 95%, #FEFEF3 ); 
+    background: linear-gradient(to bottom, #3C3C3E 95%, #FEFEF3 );
     overflow:auto;
-}
-#logo {
-    float:left;
-    width:10em;
-    padding-left:1.5%;
 }
 main {
     background-color:#FEFEF3;
     margin:2% 1% 2% 2%;
-    width:57.8%;
+    width:60.8%;
     float:left;
 }
 aside {
     background-color:#FEFEF3;
-    margin:2% 2% 2% 1%;
-    width:35.2%;
+    margin:2% 1% 2% 4%;
+    width:31.2%;
     height:auto;
     float:right;
 }
 footer {
     width:100%;
     margin:0 auto;
-    background-color:#ED7E00;
+    background: rgba(237, 126, 0, 1);
     float:left;
 }
 
@@ -83,20 +86,27 @@ nav a:active {color:#ED7E00;}
 nav #current {border-bottom:0.2em solid #FEFEF3;}
 
 /* Content */
+#logo {
+    float:left;
+    width:10em;
+    padding:0 0 1% 1.5%;
+}
 article {
     border:0.05em solid #57575B;
-    padding:1%;
+    border-radius: 1em;
+    box-shadow: 0.15em 0.15em 0.25em rgba(87, 87, 91, 0.5); 
+    padding:2%;
     margin-bottom:2%;
     overflow:auto;
     text-align:justify;
 }
 article img {width: 50%;}
 article video {width: 90%; padding:1em;}
-aside img {width: 60%;float:right;}
+aside img {width: 95%;float:left;}
 .icon
  { 
   margin: 0px;
-  padding-left:5%;    
+  padding-left:5.5%;    
   background-image: url(pics/nl.svg);
   background-repeat: no-repeat;
   background-size:1.2em;
@@ -111,15 +121,19 @@ aside img {width: 60%;float:right;}
     padding:1em 0 0 0;
     text-align: center
 }
-.fright {float:right; padding:1.3em 0 0 1em;}
+.fright {float:right; padding:1.2em 0 0 1em;}
 .fleft {float:left;}
+ul, li {
+    padding-top:0;
 
+}
 
 /* Typografi */
 h1 {
     font: 900 normal 3.5em/110% "garamond", serif; 
     color:#689096;
-    margin:4% 1% 1% 0;
+    text-shadow: 0.05em 0.05em 0 rgba(254,254,243,0.2);
+    margin:4% 2% 1% 0;
     float:right;
 }
 h2, h3, h4 {font-family:"helvetica", "arial", sans-serif; margin-top:0;}
