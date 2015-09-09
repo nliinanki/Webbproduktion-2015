@@ -42,7 +42,6 @@ footer {
     background-color:#ED7E00;
     float:left;
 }
-footer p {text-align: center }
 
 /* Menu */
 nav {margin:0; float:right;}
@@ -88,7 +87,12 @@ article {
     border:0.05em solid #57575B;
     padding:1%;
     margin-bottom:2%;
+    overflow:auto;
+    text-align:justify;
 }
+article img {width: 50%;}
+article video {width: 90%; padding:1em;}
+aside img {width: 60%;float:right;}
 .icon
  { 
   margin: 0px;
@@ -96,11 +100,19 @@ article {
   background-image: url(pics/nl.svg);
   background-repeat: no-repeat;
   background-size:1.2em;
-
 }
-article img {width: 30%;}
-article video {width: 90%;}
-aside img {width: 60%;float:right;}
+.author {
+    font: italic normal 1.0em/100% "garamond", serif;
+    padding:0.5em 0 1em 0;
+    margin:0;
+}
+.foot {
+    font: italic normal 1.0em/100% "garamond", serif;
+    padding:1em 0 0 0;
+    text-align: center
+}
+.fright {float:right; padding:1.3em;}
+.fleft {float:left;}
 
 
 /* Typografi */
@@ -112,10 +124,8 @@ h1 {
 }
 h2, h3, h4 {font-family:"helvetica", "arial", sans-serif; margin-top:0;}
 
-.author {
-    font: italic normal 1.0em/100% "garamond", serif;
-    padding:0.5em 0 3em 0;
-    margin:0;
+a {
+    color:#689096;
 }
 
 /* Table */
