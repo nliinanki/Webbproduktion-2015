@@ -47,12 +47,11 @@ footer {
 }
 
 /* Menu */
-nav {margin:0; float:right;}
+nav { float:right;}
 nav ul li {
     list-style-type:none;
     display:block;
     float:left;
-    padding:0;
     margin-left:1em;
     margin-right:1em;
 }
@@ -69,7 +68,7 @@ nav .submenu:after {
 }
 nav li:hover ul {
 	display: block;
-	position: absolute;
+	position:absolute;
 	margin: 0;
 	padding: 0.5em 0; }
 nav li:hover li {clear:both;background-color: #3C3C3E;}
@@ -105,7 +104,7 @@ article video {width: 90%; padding:1em;}
 aside img {width: 95%;float:left;}
 .icon
  { 
-  margin: 0px;
+  margin: 0;
   padding-left:5.5%;    
   background-image: url(pics/nl.svg);
   background-repeat: no-repeat;
@@ -152,3 +151,31 @@ th, td {
 tr {
     border-bottom: 1px solid #3C3C3E;
 }
+
+/* Sprite */
+.socialicons {
+    width:24px;
+    height:24px;
+    display:block;
+    background-image:url(pics/sprite.png);
+    float:left;
+}
+
+#sprite span { padding-left:25px;}
+#sprite ul {margin-top:20px; margin-bottom:20px; padding:0; overflow:auto;}
+#sprite li {
+    list-style-type:none;
+    display:block;
+    float:left;
+    margin-right:70px;
+}
+
+#homeicon {background-position:0 -48px;}
+#homeicon:hover {background-position:0 0;}
+#hammericon {background-position:0 -144px; margin-right:20px}
+#hammericon:hover {background-position:0 -96px; margin-right:20px}
+#pictureicon {background-position:0 -240px;}
+#pictureicon:hover {background-position:0 -192px;}
+#mailicon {background-position:0 -336px;}
+#mailicon:hover {background-position:0 -288px;}
+
