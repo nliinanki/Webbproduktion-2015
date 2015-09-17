@@ -4,6 +4,8 @@ body {
     background-color: #57575B;
     margin: 0;
     padding: 0;
+    display:flex;
+    flex-direction:column;
 }
 
 
@@ -17,23 +19,22 @@ blå:		#689096 rgb(104, 144, 150)
 
 
 /* Layout divs */
-#container {
+#content {
     background-color: #FEFEF3;
-    margin: 0 auto;
-    max-width: 1000px;
-    height: auto;
-    overflow: auto;
+    display:flex;
 }
 header {
     background: -prefix-linear-gradient(top, #3C3C3E 95%, #FEFEF3);
     background: linear-gradient(to bottom, #3C3C3E 95%, #FEFEF3);
     overflow: auto;
+    flex:0 0 100%;
 }
 main {
     background-color: #FEFEF3;
     margin: 2% 1% 2% 2%;
     width: 60.8%;
     float: left;
+    order:1;
 }
 aside {
     background-color: #FEFEF3;
@@ -41,12 +42,14 @@ aside {
     width: 31.2%;
     height: auto;
     float: right;
+    order:2;
 }
 footer {
     width: 100%;
     margin: 0 auto;
     background: rgba(237, 126, 0, 1);
     float: left;
+    flex:0 0 100%;
 }
 
 /* Menu */
