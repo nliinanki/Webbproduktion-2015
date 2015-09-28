@@ -170,6 +170,19 @@ th, td { padding: 0.5em;}
 tr { border-bottom: 1px solid #3C3C3E;}
 
 
+                        /* Form */
+form {
+    padding: 1em;
+}
+label {
+    display: inline-block;
+    width: 110px;
+    padding: 0.5em;
+}
+
+
+
+
                         /* Media Queries */
 
 @media only screen and (max-width: 800px) {
@@ -185,6 +198,7 @@ tr { border-bottom: 1px solid #3C3C3E;}
         width: auto;
     }
 }
+                    
 @media only screen and (max-width: 600px) {
     #menu-icon {
         display: inline-block;
