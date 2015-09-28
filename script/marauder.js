@@ -79,16 +79,55 @@ function function601() {
 
 // 7. Array 
 
-// 8. födelsedag https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates
+// 8. födelsedag
 function function801() {
 
     var monthBirth = prompt("Vilken månad fyller du år (1-12) ?");
     var dayBirth = prompt("Vilken dag fyller du år (1-31) ?");
-    console.log(dayBirth + "/" + monthBirth);
+    alert("Du fyller år den: " + dayBirth + "/" + monthBirth);
 }
 
+function function802() {
+    var monthBirth = prompt("Vilken månad fyller du år (1-12) ?");
+    var dayBirth = prompt("Vilken dag fyller du år (1-31) ?");
+
+    var todaysDate = new Date();
+    var oneDay = 24 * 60 * 60 * 1000;
+    var birthDate = new Date(todaysDate.getFullYear(), monthBirth - 1, dayBirth);
+    if (todaysDate.getTime() > birthDate.getTime()) {
+        birthDate.setFullYear(birthDate.getFullYear() + 1);
+    }
+    var diffDays = Math.round((birthDate.getTime() - todaysDate.getTime()) / (oneDay));
+
+    alert("Dagar kvar till födelsedag: " + diffDays);
+}
+
+// 9. Tabellgenerering https://developer.mozilla.org/en/docs/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
+// cell info
 
 
+function function901() {
+    var array = [
+        ["Förnamn:", "Efternamn:", "Telefon:"],
+        ["Haris", "Kljajic", "6770"],
+        ["Mats", "Loock", "6325"],
+        ["John", "Häggerud", "6321"]
+    ];
+    var body, tab, tbody, tr, td, tn, row, col;
+    body = document.getElementById("tablediv");
+    tab = document.createElement("table");
 
-
-// 9. Tabellgenerering
+    tbody = document.createElement("tbody");
+    for (row = 0; row < array.length; row++) {
+        tr = document.createElement("tr");
+        for (col = 0; col < array[row].length; col++) {
+            td = document.createElement("td");
+            tn = document.createTextNode(array[row][col]);
+            td.appendChild(tn);
+            tr.appendChild(td);
+        }
+        tbody.appendChild(tr);
+    }
+    tab.appendChild(tbody);
+    body.appendChild(tab);
+}
