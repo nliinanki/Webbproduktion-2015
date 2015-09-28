@@ -107,17 +107,24 @@ function function802() {
 
 
 function function901() {
+
+    var headArray = ["Förnamn", "Efternamn", "Telefon"];
     var array = [
-        ["Förnamn:", "Efternamn:", "Telefon:"],
         ["Haris", "Kljajic", "6770"],
         ["Mats", "Loock", "6325"],
         ["John", "Häggerud", "6321"]
     ];
-    var body, tab, tbody, tr, td, tn, row, col;
+    var body, tab, tbody, thead, th, tr, td, tn, row, col, oddRow;
     body = document.getElementById("tablediv");
     tab = document.createElement("table");
-
     tbody = document.createElement("tbody");
+    thead = document.createElement("thead");
+
+    tab.appendChild(thead);
+    for (var i = 0; i < headArray.length; i++) {
+        thead.appendChild(document.createElement("th")).appendChild(document.createTextNode(headArray[i]));
+    }
+
     for (row = 0; row < array.length; row++) {
         tr = document.createElement("tr");
         for (col = 0; col < array[row].length; col++) {
@@ -130,4 +137,6 @@ function function901() {
     }
     tab.appendChild(tbody);
     body.appendChild(tab);
+    oddRow = body.getElementsByTagName("tr")[1];
+    oddRow.style.background = "#999";
 }
