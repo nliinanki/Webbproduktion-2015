@@ -167,8 +167,8 @@ a { color: #689096;}
                         /* Table */
 table {border-collapse: collapse; margin-bottom:2em;}
 th, td { padding: 0.5em;}
-tr { border-bottom: 1px solid #3C3C3E;}
-
+tr { border-bottom: 1px solid #3C3C3E; }
+tbody tr:nth-child(odd) {background:#999;}
 
                         /* Form */
 form {

@@ -53,6 +53,47 @@ function function301() {
 }
 
 // 4. meny funktion 
+function function401() {
+    function convertToCelcius() {
+        var f = prompt("1. Fahrenheit till celcius" + '\n' +
+            "Skriv in värdet i Fahrenheit");
+        f = Math.round((f - 32) * 5 / 9);
+        alert("I celcius blir det: " +f);
+    }
+
+    function convertToFahrenheit() {
+        var c = prompt("2. Celcius till fahrenheit" + '\n' +
+            "Skriv in värdet i Celcius");
+        c = Math.round(c * 9 / 5 + 32);
+        alert("I fahrenheit blir det: " +c);
+    }
+
+    var bool = true;
+    while (bool) {
+        var menuoption = prompt("Välkommen, välj mellan valen eller tryck 0 för att avbryta" + '\n' +
+            "0. Avbryt" + '\n' +
+            "1. Fahrenheit till celcius" + '\n' +
+            "2. Celcius till fahrenheit" + '\n' +
+            "3. Gissa nummret");
+        if (!menuoption) break;
+        if (menuoption === "0") {
+            bool = false;
+        }
+        else if (menuoption === "1") {
+            convertToCelcius();
+        }
+        else if (menuoption === "2") {
+            convertToFahrenheit();
+        }
+        else if (menuoption === "3") {
+            function301();
+        }
+        else {
+            alert("Det var inget korrekt nummer. Försök igen.");
+        }
+    }
+}
+
 
 // 5. String change case 
 function function501() {
@@ -77,7 +118,15 @@ function function601() {
     console.log("Givet längden a: " + a + " och b: " + b + ", är hypotenusan för längden c: " + c);
 }
 
-// 7. Array 
+// 7. Array dela på längden av array, min och max
+// resultat = 27, 89, 2 eller medel, max, min i ny array, heltasavrundas nedåt
+function function701() {
+    var testResult = [10,2,89,65,13,3];
+    var testAverage = +(testResult)/(testResult.length);
+    console.log(testResult.length);
+    console.log(testAverage);
+
+}
 
 // 8. födelsedag
 function function801() {
@@ -102,9 +151,7 @@ function function802() {
     alert("Dagar kvar till födelsedag: " + diffDays);
 }
 
-// 9. Tabellgenerering https://developer.mozilla.org/en/docs/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces
-// cell info
-
+// 9. Tabellgenerering 
 
 function function901() {
 
@@ -137,6 +184,5 @@ function function901() {
     }
     tab.appendChild(tbody);
     body.appendChild(tab);
-    oddRow = body.getElementsByTagName("tr")[1];
-    oddRow.style.background = "#999";
+
 }
