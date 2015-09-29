@@ -1,13 +1,14 @@
-// 1. Hello World
+// 1. Hello World. Moment I
 function function101() {
     console.log("Hello World");
 }
 
+// Moment II
 function function102() {
     alert("Rad1" + '\n' + "Rad2");
 }
 
-// 2. Medeltal av 4 tal
+// 2. Medeltal av 4 tal. Moment I
 function function201() {
     var average = function(tal1, tal2, tal3, tal4) {
         return (tal1 + tal2 + tal3 + tal4) / 4;
@@ -15,6 +16,7 @@ function function201() {
     console.log(average(2, 2, 3, 3));
 }
 
+// Moment II
 function function202() {
     var printOut = function(argumentOne, argumentTwo) {
         console.log(argumentOne + ", " + argumentTwo);
@@ -52,20 +54,20 @@ function function301() {
     alert("Det rätta nummret var " + random);
 }
 
-// 4. meny funktion 
+// 4. Meny funktion. Moment I, II, III
 function function401() {
     function convertToCelcius() {
         var f = prompt("1. Fahrenheit till celcius" + '\n' +
             "Skriv in värdet i Fahrenheit");
         f = Math.round((f - 32) * 5 / 9);
-        alert("I celcius blir det: " +f);
+        alert("I celcius blir det: " + f);
     }
 
     function convertToFahrenheit() {
         var c = prompt("2. Celcius till fahrenheit" + '\n' +
             "Skriv in värdet i Celcius");
         c = Math.round(c * 9 / 5 + 32);
-        alert("I fahrenheit blir det: " +c);
+        alert("I fahrenheit blir det: " + c);
     }
 
     var bool = true;
@@ -95,7 +97,7 @@ function function401() {
 }
 
 
-// 5. String change case 
+// 5. String change case. Moment I och II
 function function501() {
 
     function toOppositeCase(char) {
@@ -118,17 +120,33 @@ function function601() {
     console.log("Givet längden a: " + a + " och b: " + b + ", är hypotenusan för längden c: " + c);
 }
 
-// 7. Array dela på längden av array, min och max
-// resultat = 27, 89, 2 eller medel, max, min i ny array, heltasavrundas nedåt
+// 7. Array tentamen resultat. Moment I och II 
 function function701() {
-    var testResult = [10,2,89,65,13,3];
-    var testAverage = +(testResult)/(testResult.length);
-    console.log(testResult.length);
-    console.log(testAverage);
+    var testResult = [10, 2, 89, 9, 65, 13, 3];
+    var sum = 0;
+    for (var x = 0; x < testResult.length; x++) {
+        sum += testResult[x];
+    }
+    var average = Math.round(sum / testResult.length);
+    console.log();
 
+    var maxTest = testResult[0],
+        minTest = testResult[0];
+
+    for (var x = 0; x < testResult.length; x++) {
+        if (maxTest < testResult[x])
+            maxTest = testResult[x];
+        if (minTest > testResult[x])
+            minTest = testResult[x];
+    }
+    console.log("Medelvärdet är: " + average + '\n'+ 
+                "Största värdet är: " + maxTest + '\n'+
+                "Minsta värdet är: " + minTest);
+     var statsArray = [average, maxTest, minTest];
+     console.log(statsArray);
 }
 
-// 8. födelsedag
+// 8. födelsedag. Moment I
 function function801() {
 
     var monthBirth = prompt("Vilken månad fyller du år (1-12) ?");
@@ -136,6 +154,7 @@ function function801() {
     alert("Du fyller år den: " + dayBirth + "/" + monthBirth);
 }
 
+// Moment II och III
 function function802() {
     var monthBirth = prompt("Vilken månad fyller du år (1-12) ?");
     var dayBirth = prompt("Vilken dag fyller du år (1-31) ?");
@@ -151,7 +170,7 @@ function function802() {
     alert("Dagar kvar till födelsedag: " + diffDays);
 }
 
-// 9. Tabellgenerering 
+// 9. Tabellgenerering
 
 function function901() {
 
@@ -161,7 +180,7 @@ function function901() {
         ["Mats", "Loock", "6325"],
         ["John", "Häggerud", "6321"]
     ];
-    var body, tab, tbody, thead, th, tr, td, tn, row, col, oddRow;
+    var body, tab, tbody, thead, th, tr, td, tn, row, col;
     body = document.getElementById("tablediv");
     tab = document.createElement("table");
     tbody = document.createElement("tbody");
@@ -179,6 +198,7 @@ function function901() {
             tn = document.createTextNode(array[row][col]);
             td.appendChild(tn);
             tr.appendChild(td);
+            console.log(array[0][0]);
         }
         tbody.appendChild(tr);
     }
