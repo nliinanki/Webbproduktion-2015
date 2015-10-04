@@ -169,17 +169,18 @@ table {border-collapse: collapse; margin-bottom:2em;}
 th, td { padding: 0.5em;}
 tr { border-bottom: 1px solid #3C3C3E; }
 tbody tr:nth-child(odd) {background:#999;}
+.nocolor {background:#FEFEF3;}
 
                         /* Form */
-form {
-    padding: 1em;
+form {padding: 1em;}
+.error{display: none; margin-left: 10px;}		
+.error_show{color: red; margin-left: 10px;}
+#payment label{
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	padding-top:1em;
 }
-label {
-    display: inline-block;
-    width: 110px;
-    padding: 0.5em;
-}
-
 
 
 

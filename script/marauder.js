@@ -3,7 +3,7 @@ function function101() {
     console.log("Hello World");
 }
 
-// Moment II
+// 1. Moment II
 function function102() {
     alert("Rad1" + '\n' + "Rad2");
 }
@@ -16,7 +16,7 @@ function function201() {
     console.log(average(2, 2, 3, 3));
 }
 
-// Moment II
+// 2. Moment II
 function function202() {
     var printOut = function(argumentOne, argumentTwo) {
         console.log(argumentOne + ", " + argumentTwo);
@@ -154,7 +154,7 @@ function function801() {
     alert("Du fyller år den: " + dayBirth + "/" + monthBirth);
 }
 
-// Moment II och III
+// 8. Moment II och III
 function function802() {
     var monthBirth = prompt("Vilken månad fyller du år (1-12) ?");
     var dayBirth = prompt("Vilken dag fyller du år (1-31) ?");
@@ -171,7 +171,6 @@ function function802() {
 }
 
 // 9. Tabellgenerering
-
 function function901() {
 
     var headArray = ["Förnamn", "Efternamn", "Telefon"];
